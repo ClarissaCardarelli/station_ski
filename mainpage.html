@@ -1,53 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <link rel="stylesheet" href="reset.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+        <nav class="navbar">
+            <ul class="menu">
+
+                <li> <a class="navbara" href="">LOGO</a>
+                </li>
+                <li> <a class="navbara" href="">Découvrir la station</a>
+                    <ul class="dropdown">
+                        <li>La montagne caca</li>
+                        <li>La montagne pipi</li>
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">Se loger</a>
+                    <ul class="dropdown">
+                        <li>Réserver votre séjour</li>
+                        <li>Appartements & Manoirs</li>
+                        <li>Chateaux</li>
+                        <li>Bases secrete style James Bond</li>
+                        <li>Nos plus belles prisons</li>
+                        <li>Visiter notre Mordor !</li>
+                        <li>Location de dragons domestiques</li>
+
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">Mon séjour</a>
+                    <ul class="dropdown">
+                        <li>Garage à mioches</li>
+                        <li>Viens ! On est bieng</li>
+                        <li>Location de catapultes</li>
+                        <li>Garde du corps perso</li>
+                        <li>Nos meilleures bars</li>
+                        <li>Service de chauffeur</li>
+                        <li>Binouze en famille</li>
+
+
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">A voir,à faire</a>
+                    <ul class="dropdown">
+                        <li>Figurant dans un spectacle de lancer de couteaux !</li>
+                        <li>Mettre sa tête dans la bouche d'un lion</li>
+                        <li>Jeux de la fourchette</li>
+                        <li>Le jeux des 5 doigts !</li>
+                        <li>Randonnées</li>
+
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">Ski | Glisse</a>
+                    <ul class="dropdown">
+                        <li>Acheter mon forfait</li>
+                        <li>Louer mon matériel</li>
+                        <li>Apprendre à tomber</li>
+                        <li>Le domaine skiable</li>
+                        <li>Espace lancer de haches</li>
+
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">Balnéo</a>
+                </li>
+            </ul>
+            <input type="checkbox" id="toggle-search">
+            <label for="toggle-search" class="search-btn"></label>
+
+            <div class="Search-container">
+                <label for="toggle-search" class="close-btn"></label>
+
+                <p class="Search-title"></p>
+                <form role="search" method="get" id="searchform" class="Search-form" action="mainpage.html">
+                    <label for="s" class="Search-label">
+                        <input type="search" class="Search-input" id="s" name="s" value=""
+                            placeholder="Quoi vous vouloir ?">
+            </div>
+
+
+            </button>
+            </form>
+
+            <a class="Header-booking" href="" title="Je réserve mon séjour" target="_blank">
+                Je réserve mon séjour
+            </a>
+
+            </div>
+
+        </nav>
     </header>
-    
+
+    <!-- Bootstrap JS (important pour le menu burger) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

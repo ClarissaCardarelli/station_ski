@@ -1,1 +1,137 @@
-.
+header .navbar {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    min-height: 50px;
+    align-items: center;
+    padding: 0 5%;
+    justify-content: space-between;
+}
+header .menu{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+header .navbar .navbara {
+    flex-direction: column;
+    color: #1e1e2f;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+header .navbar .navbara:hover {
+    color: brown;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+  position: relative; 
+  padding: 15px 20px;
+  color: rgb(5, 2, 2);
+  cursor: pointer;
+}
+
+.menu li:hover .dropdown {
+    display: flex;
+    max-width: 100%;
+}
+
+.menu li .dropdown {
+    white-space: nowrap;
+  display: none;
+  position: absolute; 
+  top: 100%; 
+  left: 0;
+  list-style: none;
+    flex-direction: column;
+
+}
+
+.menu li .dropdown li {
+  padding: 10px 20px;      flex-direction: column;
+    color: #1e1e2f;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold
+}
+.Search-container {
+    align-items: center;
+    background-color: #ffffff;
+    display: flex
+;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: space-evenly;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transform: translateY(-100%);
+    transition: transform .5s;
+    width: 100vw;
+    z-index: 150;
+}
+
+
+#toggle-search:checked ~ .Search-container {
+  transform: translateY(0);
+}
+
+.Header-booking {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    flex
+}
+
+.Header-booking, .Header-radar {
+    align-items: center;
+    background-color: #f68700;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#toggle-search {
+  display: none;
+}
+.search-btn {
+    width: 80px;
+    height: 50px;
+  cursor: pointer;
+background-image: url(gettyimages-127861912-640x640.avif);
+background-size: cover;
+}
+.close-btn {
+    width: 350px;
+    height: 200px;
+  cursor: pointer;
+background-image: url(maxresdefault.jpg);
+background-size: cover;
+text-align: end;
+justify-content: end;
+border-radius: 15px;
+}
+.Search-input {
+    width: 80%;                /* largeur agréable dans le container */
+    max-width: 500px;          /* ne devient pas trop large sur grand écran */
+    padding: 0.8rem 1.2rem;    /* espace interne confortable */
+    border-radius: 25px;       /* coins très arrondis pour style moderne */
+    border: 2px solid #b0e0e6; /* bleu glacier clair */
+    text-align: center;        /* texte centré */
+    font-size: 1rem;
+    outline: none;             /* supprime le contour par défaut */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* ombre légère */
+    transition: all 0.3s ease;
+    background-color: #f8faff; /* léger fond bleu pâle pour contraste */
+}
+
+/* Effet quand l’utilisateur clique / focus */
+.Search-input:focus {
+    border-color: #ff4500;        /* accent rouge ski */
+    box-shadow: 0 0 8px rgba(255, 69, 0, 0.4); /* glow orange */
+    background-color: #ffffff;  
+}
