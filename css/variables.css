@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Montserrat+Alternates:wght@400;800&display=swap");
+
 :root {
   --primary-background-color: #ffffff;
   --secondary-background-color: #f4f6f8;
@@ -5,4 +7,7 @@
   --secondary-text-color: #7bbfbf;
   --primary-accent-color: #f78906;
   --secondary-accent-color: #fdc446;
+  --font-family-header: "Montserrat Alternates", sans-serif;
+  --font-family-text: "Montserrat", sans-serif;
+  --font-family-accent: "Lora", serif;
 }
