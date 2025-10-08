@@ -8,11 +8,13 @@ header .navbar {
     justify-content: space-between;
     margin-bottom: 500px;
 }
-header .menu{
-        display: flex;
-        list-style: none;
-        gap: 20px;
-    }
+
+header .menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
 header .navbar .navbara {
     flex-direction: column;
     color: #1e1e2f;
@@ -20,8 +22,9 @@ header .navbar .navbara {
     font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 0.5px;
-  transition: color 0.3s ease, transform 0.2s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
+
 header .navbar .navbara:hover {
     color: #ff4500;
 
@@ -30,11 +33,12 @@ header .navbar .navbara:hover {
 .menu {
     display: flex;
 }
+
 .menu li {
-  position: relative; 
-  padding: 7px 20px;
-  color: rgb(209, 0, 0);
-  cursor: pointer;
+    position: relative;
+    padding: 7px 20px;
+    color: rgb(209, 0, 0);
+    cursor: pointer;
 
 }
 
@@ -46,33 +50,36 @@ header .navbar .navbara:hover {
 
 .menu li .dropdown {
     white-space: nowrap;
-  display: none;
-  position: absolute; 
-  top: 100%; 
-  left: 0;
-  list-style: none;
-  flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    flex-direction: column;
     background-color: #ffffff;
 }
+
 .menu li .dropdown:hover {
     color: #ff4500;
 
 }
+
 .menu li .dropdown li {
     color: #1e1e2f;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
 }
+
 .menu li .dropdown li:hover {
     color: #ff4500;
 
 }
+
 .Search-container {
     align-items: center;
     background-color: #ffffff;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     height: 20rem;
     justify-content: space-evenly;
@@ -86,8 +93,8 @@ header .navbar .navbara:hover {
 }
 
 
-#toggle-search:checked ~ .Search-container {
-  transform: translateY(0);
+#toggle-search:checked~.Search-container {
+    transform: translateY(0);
 }
 
 .Header-booking {
@@ -98,7 +105,8 @@ header .navbar .navbara:hover {
     flex
 }
 
-.Header-booking, .Header-radar {
+.Header-booking,
+.Header-radar {
     align-items: center;
     background-color: #f68700;
     border-radius: 2rem;
@@ -106,52 +114,151 @@ header .navbar .navbara:hover {
     justify-content: center;
     padding: 10px;
 }
+
 #toggle-search {
-  display: none;
+    display: none;
 }
+
 .search-btn {
     width: 80px;
     height: 50px;
-  cursor: pointer;
-background-image: url(gettyimages-127861912-640x640.avif);
-background-size: cover;
+    cursor: pointer;
+    background-image: url(gettyimages-127861912-640x640.avif);
+    background-size: cover;
 }
+
 .close-btn {
     width: 350px;
     height: 200px;
-  cursor: pointer;
-background-image: url(maxresdefault.jpg);
-background-size: cover;
-text-align: end;
-justify-content: end;
-border-radius: 15px;
+    cursor: pointer;
+    background-image: url(maxresdefault.jpg);
+    background-size: cover;
+    text-align: end;
+    justify-content: end;
+    border-radius: 15px;
 }
+
 .Search-input {
-    width: 80%;                /* largeur agréable dans le container */
-    max-width: 500px;          /* ne devient pas trop large sur grand écran */
-    padding: 0.8rem 1.2rem;    /* espace interne confortable */
-    border-radius: 25px;       /* coins très arrondis pour style moderne */
-    border: 2px solid #b0e0e6; /* bleu glacier clair */
-    text-align: center;        /* texte centré */
+    width: 80%;
+    /* largeur agréable dans le container */
+    max-width: 500px;
+    /* ne devient pas trop large sur grand écran */
+    padding: 0.8rem 1.2rem;
+    /* espace interne confortable */
+    border-radius: 25px;
+    /* coins très arrondis pour style moderne */
+    border: 2px solid #b0e0e6;
+    /* bleu glacier clair */
+    text-align: center;
+    /* texte centré */
     font-size: 1rem;
-    outline: none;             /* supprime le contour par défaut */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* ombre légère */
+    outline: none;
+    /* supprime le contour par défaut */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* ombre légère */
     transition: all 0.3s ease;
-    background-color: #f8faff; /* léger fond bleu pâle pour contraste */
+    background-color: #f8faff;
+    /* léger fond bleu pâle pour contraste */
 }
 
 /* Effet quand l’utilisateur clique / focus */
 .Search-input:focus {
-    border-color: #ff4500;        /* accent rouge ski */
-    box-shadow: 0 0 8px rgba(255, 69, 0, 0.4); /* glow orange */
-    background-color: #ffffff;  
+    border-color: #ff4500;
+    /* accent rouge ski */
+    box-shadow: 0 0 8px rgba(255, 69, 0, 0.4);
+    /* glow orange */
+    background-color: #ffffff;
 }
-.container{
+
+.container {
     display: flex;
     width: 100%;
     height: 200px;
-    }
+}
 
 .container img {
     width: 10px;
+}
+
+h1,
+h2 {
+    color: var(--primary-text-color);
+    font-size: 4rem;
+}
+
+.surtitle {
+    color: var(--secondary-text-color);
+    font-family: var(--font-family-text);
+}
+
+.card-deals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    grid-auto-rows: auto;
+    gap: 20px;
+
+
+}
+
+.card-deals article {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-deals article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.card-deals article h3 {
+    position: absolute;
+    bottom: 0;
+    color: var(--color-title-img);
+}
+
+.card-main {
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.card-child1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.card-child2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.card-child3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.card-child4 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.card-main::before,
+.card-child1::before,
+.card-child2::before,
+.card-child3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    background: linear-gradient(180deg,
+            hsla(0, 0%, 100%, 0) 0%,
+            /* haut transparent */
+            #0d3454 95%
+            /* bleu foncé vers le bas */
+        );
+    z-index: 0;
 }
