@@ -113,14 +113,14 @@ header .navbar .navbara:hover {
     width: 80px;
     height: 50px;
   cursor: pointer;
-background-image: url(gettyimages-127861912-640x640.avif);
+background-image: url(../images/main/gettyimages-127861912-640x640.avif);
 background-size: cover;
 }
 .close-btn {
     width: 350px;
     height: 200px;
   cursor: pointer;
-background-image: url(maxresdefault.jpg);
+background-image: url(../images/main/maxresdefault.jpg);
 background-size: cover;
 text-align: end;
 justify-content: end;
