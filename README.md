@@ -15,8 +15,8 @@ dark orange : #F78906
 
 Général:
 
-- [ ] logo - Matthieu
-- [ ] nom - ?
+- [x]logo - a valider image/logo
+- [ ] nom - humour Dev ? ( Domaine des commits givré / les pic de JS .....)
 - [ ] charte graphique - ?
 - [x] css reset - Mika
 - [x] css variables (colors, fonts) - Clarissa
