@@ -20,7 +20,7 @@ Général:
 - [ ] charte graphique - ?
 - [x] css reset - Mika
 - [x] css variables (colors, fonts) - Clarissa
-- [ ] css page general styles - ?
+- [x] css page general styles - Clarissa
 - [ ] PPT présentation (si besoin) - Clarissa
 - [ ] readme file
 - [ ] validation W3C
@@ -46,8 +46,8 @@ Main page:
 Reservations page:
 
 - [x] wireframe - Clarissa
-- [ ] maquette - Clarissa
-- [x] html body - Clarissa
-- [ ] css body - ?
+- [ ] maquette - Clarissa - en cours
+- [x] html body - Clarissa - en cours
+- [ ] css body - Clarissa et autre? - en cours
 - [ ] nav & footer - ?
 - [ ] responsiveness - ?
