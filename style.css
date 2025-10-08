@@ -127,23 +127,23 @@ justify-content: end;
 border-radius: 15px;
 }
 .Search-input {
-    width: 80%;                /* largeur agréable dans le container */
-    max-width: 500px;          /* ne devient pas trop large sur grand écran */
-    padding: 0.8rem 1.2rem;    /* espace interne confortable */
-    border-radius: 25px;       /* coins très arrondis pour style moderne */
-    border: 2px solid #b0e0e6; /* bleu glacier clair */
-    text-align: center;        /* texte centré */
+    width: 80%;               
+    max-width: 500px;          
+    padding: 0.8rem 1.2rem;    
+    border-radius: 25px;      
+    border: 2px solid #b0e0e6; 
+    text-align: center;       
     font-size: 1rem;
-    outline: none;             /* supprime le contour par défaut */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* ombre légère */
+    outline: none;             
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
     transition: all 0.3s ease;
-    background-color: #f8faff; /* léger fond bleu pâle pour contraste */
+    background-color: #f8faff;
 }
 
-/* Effet quand l’utilisateur clique / focus */
+
 .Search-input:focus {
-    border-color: #ff4500;        /* accent rouge ski */
-    box-shadow: 0 0 8px rgba(255, 69, 0, 0.4); /* glow orange */
+    border-color: #ff4500;  
+    box-shadow: 0 0 8px rgba(255, 69, 0, 0.4);
     background-color: #ffffff;  
 }
 .container{
@@ -154,4 +154,15 @@ border-radius: 15px;
 
 .container img {
     width: 10px;
+}
+
+header section video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* derrière ton contenu */
 }
