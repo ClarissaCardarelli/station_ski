@@ -123,7 +123,7 @@ header .navbar .navbara:hover {
     width: 80px;
     height: 50px;
     cursor: pointer;
-    background-image: url(gettyimages-127861912-640x640.avif);
+    background-image: url(../images/main/gettyimages-127861912-640x640.avif);
     background-size: cover;
 }
 
@@ -131,7 +131,7 @@ header .navbar .navbara:hover {
     width: 350px;
     height: 200px;
     cursor: pointer;
-    background-image: url(maxresdefault.jpg);
+    background-image: url(../images/main/maxresdefault.jpg);
     background-size: cover;
     text-align: end;
     justify-content: end;
@@ -140,33 +140,22 @@ header .navbar .navbara:hover {
 
 .Search-input {
     width: 80%;
-    /* largeur agréable dans le container */
     max-width: 500px;
-    /* ne devient pas trop large sur grand écran */
     padding: 0.8rem 1.2rem;
-    /* espace interne confortable */
     border-radius: 25px;
-    /* coins très arrondis pour style moderne */
     border: 2px solid #b0e0e6;
-    /* bleu glacier clair */
     text-align: center;
-    /* texte centré */
     font-size: 1rem;
     outline: none;
-    /* supprime le contour par défaut */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    /* ombre légère */
     transition: all 0.3s ease;
     background-color: #f8faff;
-    /* léger fond bleu pâle pour contraste */
 }
 
-/* Effet quand l’utilisateur clique / focus */
+
 .Search-input:focus {
     border-color: #ff4500;
-    /* accent rouge ski */
     box-shadow: 0 0 8px rgba(255, 69, 0, 0.4);
-    /* glow orange */
     background-color: #ffffff;
 }
 
@@ -178,6 +167,18 @@ header .navbar .navbara:hover {
 
 .container img {
     width: 10px;
+}
+
+header section video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    /* derrière ton contenu */
 }
 
 h1,
