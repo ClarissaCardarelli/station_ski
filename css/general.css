@@ -1,0 +1,38 @@
+* {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+
+h1 {
+  font-family: var(--font-family-header);
+  font-weight: 400;
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-family: var(--font-family-header);
+  font-weight: 400;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-family: var(--font-family-text);
+  padding-bottom: 2rem;
+  /* padding bottom to see later */
+}
+
+.boldHeader {
+  font-weight: 900;
+  display: block;
+}
+
+.accentSubtitle {
+  color: var(--secondary-text-color);
+  font-family: var(--font-family-accent);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding-bottom: 0.5rem;
+}
