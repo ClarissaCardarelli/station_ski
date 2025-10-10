@@ -36,8 +36,8 @@ Main page:
 - [ ] footer - Mika
 - [x] section about us - Jugurta
 - [x] section deals - ?
-- [x] section activities - ?
-- [ ] section quick links - ?
+- [x] section activities - ?Jugurta
+- [x] section quick links - ?Jugurta
 - [ ] section events - ?
 - [ ] section reviews - ?
 - [ ] sections photos - ?
