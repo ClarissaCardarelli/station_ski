@@ -34,9 +34,9 @@ Main page:
 - [ ] nav - Mika
 - [ ] hero section & video - Mika
 - [ ] footer - Mika
-- [ ] section about us - Jugurta
-- [ ] section deals - ?
-- [ ] section activities - ?
+- [x] section about us - Jugurta
+- [x] section deals - ?
+- [x] section activities - ?
 - [ ] section quick links - ?
 - [ ] section events - ?
 - [ ] section reviews - ?
