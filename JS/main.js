@@ -1,6 +1,4 @@
-  document.body.addEventListener('click', () => {
-    video.muted = false;
-  }, { once: true });
+
 
   
   const video = document.getElementById('myVideo');
@@ -16,3 +14,8 @@
       button.textContent = 'Démute' ;
     }
   })
+
+
+    document.body.addEventListener('click', () => {
+    video.muted = false;
+  }, { once: true });
