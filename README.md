@@ -38,6 +38,8 @@ Main page:
 - [x] section deals - ?
 - [x] section activities - ?
 - [x] section quick links - ?
+- [x] section activities - ?Jugurta
+- [x] section quick links - ?Jugurta
 - [ ] section events - ?
 - [ ] section reviews - ?
 - [ ] sections photos - ?
