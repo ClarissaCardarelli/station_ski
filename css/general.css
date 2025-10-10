@@ -6,7 +6,7 @@
 h1 {
   font-family: var(--font-family-header);
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 3rem;
   padding-bottom: 1rem;
 }
 
@@ -14,12 +14,12 @@ h2 {
   font-family: var(--font-family-header);
   font-weight: 400;
   font-size: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 p {
   font-family: var(--font-family-text);
-  padding-bottom: 2rem;
+
   /* padding bottom to see later */
 }
 
@@ -32,7 +32,13 @@ p {
   color: var(--secondary-text-color);
   font-family: var(--font-family-accent);
   text-transform: uppercase;
-  font-weight: 900;
+  font-size: 0.9rem;
+  font-weight: 800;
   letter-spacing: 1px;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
+  background: transparent;
+}
+
+section {
+  padding-top: 4rem;
 }
