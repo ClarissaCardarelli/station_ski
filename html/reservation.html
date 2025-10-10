@@ -16,32 +16,57 @@
   </head>
   <body>
     <header>
+      <div class="top-bar"></div>
       <nav></nav>
-    </header>
-    <!-- which parts are in header / hero ? -->
-    <main>
-      <button>Hébergement</button>
-      <button>Forfaits</button>
       <section id="hero">
-        <form action="">
-          <h1><span class="boldHeader">Réservez </span>votre séjour</h1>
-          <label for="dateArrive">Date d'arrivée</label>
-          <input id="dateArrive" type="date" />
-          <label for="dateLeave">Date de départ</label>
-          <input id="dateLeave" type="date" />
-          <label for="nbPeople"></label>
-          <input id="nbPeople" type="text" />
-          <button>Rechercher</button>
-        </form>
+        <div id="formDiv">
+          <div id="formBtnsDiv">
+            <button type="button" id="housingBtn">Hébergement</button>
+            <button type="button" id="forfaitsBtn">Forfaits</button>
+          </div>
+          <form action="">
+            <h1><span class="boldHeader">Réservez </span>votre séjour</h1>
+            <label for="dateArrive">Date d'arrivée</label>
+            <input id="dateArrive" type="date" />
+            <label for="dateLeave">Date de départ</label>
+            <input id="dateLeave" type="date" />
+            <label for="nbPeople"></label>
+            <input id="nbPeople" type="text" />
+            <button type="submit" id="subBtnRes">Rechercher</button>
+          </form>
+        </div>
       </section>
+    </header>
 
+    <main>
       <section id="offers">
         <p class="accentSubtitle">Planifiez votre prochain séjour</p>
         <h2>
           <span class="boldHeader">Avec des offres incontournables </span>rien
           que pour vous !
         </h2>
-        <div>ENTER GRID HERE</div>
+        <div id="grid1">
+          <div class="div1 gridPhoto">
+            <p class="accentSubtitle">Séjourner</p>
+            <p>Hébergements</p>
+          </div>
+          <div class="div2 gridPhoto">
+            <p class="accentSubtitle">Découvrir</p>
+            <p>Forfaits Remontées mécaniques</p>
+          </div>
+          <div class="div3 gridPhoto">
+            <p class="accentSubtitle">Découvrir</p>
+            <p>Activités</p>
+          </div>
+          <div class="div4 gridPhoto">
+            <p class="accentSubtitle">Découvrir</p>
+            <p>Location de matériels</p>
+          </div>
+          <div class="div5 gridPhoto">
+            <p class="accentSubtitle">Découvrir</p>
+            <p>Ski</p>
+          </div>
+        </div>
       </section>
 
       <section id="housing">
