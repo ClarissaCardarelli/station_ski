@@ -37,7 +37,7 @@ Main page:
 - [x] section about us - Jugurta
 - [x] section deals - ?
 - [x] section activities - ?
-- [ ] section quick links - ?
+- [x] section quick links - ?
 - [ ] section events - ?
 - [ ] section reviews - ?
 - [ ] sections photos - ?
