@@ -19,8 +19,11 @@ h2 {
 
 p {
   font-family: var(--font-family-text);
+  background: transparent;
+}
 
-  /* padding bottom to see later */
+i {
+  background: transparent;
 }
 
 .boldHeader {

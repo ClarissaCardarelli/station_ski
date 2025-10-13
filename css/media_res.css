@@ -1,0 +1,9 @@
+@media (max-width: 769px) {
+  .page {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "b"
+      "a"
+      "c";
+  }
+}
