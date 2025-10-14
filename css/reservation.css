@@ -1,3 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 95vh;
+}
+
+.top-bar {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 30px;
+}
+
+nav {
+  background-color: var(--primary-background-color);
+  height: 90px;
+  width: 100%;
+}
+
+section#hero {
+  flex: 1;
+  width: 100%;
+  background-image: url(../images/reservation/main-hand.jpg);
+  background-position: center 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  clip-path: ellipse(99% 100% at 50% 0%);
+}
+
+#formDiv {
+  width: 60%;
+  margin: 0 auto;
+  /* border: 5px solid green; */
+  background: transparent;
+}
+
+form {
+  width: 40%;
+  /* border: 2px solid red; */
+  text-align: left;
+  padding: 40px;
+}
+
+#formBtnsDiv {
+  text-align: center;
+  border: none;
+  width: 40%;
+  margin: 20px 0;
+}
+
+button {
+  width: 49%;
+  color: var(--primary-background-color);
+  background-color: var(--primary-accent-color);
+  border: none;
+  font-family: var(--font-family-text);
+  padding: 0.5em 1.5em;
+  font-size: 1.25em;
+}
+
+#subBtnRes {
+  width: 100%;
+  border-radius: 9999px;
+}
+
 #offers,
 #housing,
 #infos {
@@ -7,13 +79,204 @@
   text-align: center;
 }
 
-#offers div {
-  background-color: yellow;
-  width: 500px;
-  height: 300px;
-  margin: 0 auto;
+/* OFFERS */
+
+#grid1 {
+  /* height: 500px; */
+  display: grid;
+  grid-template-areas: "a b c";
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(5, 1fr);
 }
 
-ul {
+.gridPhoto {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 20px;
+  padding-top: 25%; /* aspect ratio 4:3 (height = 25% of width) */
+}
+
+.gridPhoto p {
+  color: var(--primary-background-color);
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.gridPhoto::after,
+.housePhoto::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(13, 52, 84, 1) 0%,
+    rgba(13, 52, 84, 1) 3%,
+    rgba(40, 154, 247, 0.3) 35%,
+    rgba(40, 154, 247, 0.05) 100%
+  );
+  z-index: 0;
+}
+
+.div1 {
+  grid-row: 1 / 6;
+  background-image: url(../images/reservation/cabin.jpg);
+}
+
+.div2 {
+  grid-row: 1 / 4;
+  background-image: url(../images/reservation/ski-lift.jpg);
+}
+
+.div3 {
+  grid-row: 4 / 6;
+  /* grid-column-start: 2; */
+  background-image: url(../images/reservation/snow-mobile.jpg);
+}
+
+.div4 {
+  grid-row: 1 / 3;
+  /* grid-column-start: 3; */
+  background-image: url(../images/reservation/material.jpg);
+}
+
+.div5 {
+  grid-row: 3 / 6;
+  /* grid-column-start: 3; */
+  background-image: url(../images/reservation/walking.jpg);
+}
+
+/* HOUSING */
+
+#housing > h2 + p,
+#infos > h2 + p {
+  /* color: red; */
+  margin-bottom: 4rem;
+}
+
+#housingPart2 {
+  display: flex;
+  justify-content: space-around;
+  /* border: 5px solid green; */
+}
+
+#map {
+  width: 50%;
+  object-fit: contain;
+  /* border: 5px solid blueviolet; */
+  padding: 50px;
+}
+
+#housingImgsCon {
+  width: 50%;
+  /* border: 5px solid pink; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.housePhoto {
+  width: 35%;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.housePhoto p {
+  color: var(--primary-background-color);
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+.house1 {
+  background-image: url(../images/reservation/house1.jpg);
+}
+
+.house2 {
+  background-image: url(../images/reservation/house2.jpg);
+}
+
+.house3 {
+  background-image: url(../images/reservation/house3.jpg);
+}
+
+.house4 {
+  background-image: url(../images/reservation/house4.jpg);
+}
+
+.house5 {
+  background-image: url(../images/reservation/house5.jpg);
+}
+.house6 {
+  background-image: url(../images/reservation/house6.jpg);
+}
+
+/* INFOS */
+
+#linksAdvice {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid blue; */
+  margin: 3rem 0;
+}
+
+#linksAdvice li {
+  /* width: 100px; */
+  background-color: var(--secondary-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#linksAdvice li:hover {
+  background-color: var(--primary-text-color);
+  transition: 0.3s;
+}
+
+#linksAdvice li:hover p {
+  color: var(--primary-background-color);
+  transition: 0.3s;
+}
+
+#linksAdvice li:hover i {
+  color: var(--primary-accent-color);
+  transition: 0.3s;
+}
+
+#linksAdvice i {
+  font-size: 3rem;
+  padding: 0 2em 0.5em;
+  position: relative;
+  top: -25px;
+}
+
+#linksAdvice p {
+  max-width: 15ch;
+  /* padding: 1em 0; */
+  position: relative;
+  top: -25px;
+}
+
+/* INFOS SUBSECTION */
+
+#infosSubSection {
+  display: flex;
+  border: 2px solid green;
 }

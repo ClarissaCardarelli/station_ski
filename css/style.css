@@ -279,6 +279,15 @@ h2 {
   z-index: 0;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Section activities/carousel */
 
 .ski {
