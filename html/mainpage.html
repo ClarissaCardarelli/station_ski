@@ -4,6 +4,7 @@
 
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
@@ -74,19 +75,18 @@
       <input type="checkbox" id="toggle-search">
       <label for="toggle-search" class="search-btn"></label>
 
-      <div class="Search-container">
-        <label for="toggle-search" class="close-btn"></label>
-
-        <p class="Search-title"></p>
-        <form role="search" method="get" id="searchform" class="Search-form" action="mainpage.html">
-          <label for="s" class="Search-label">
-            <input type="search" class="Search-input" id="s" name="s" value="" placeholder="Quoi vous vouloir ?">
-      </div>
-      </button>
-      </form>
+<div id="righnav">
       <a class="Header-booking" href="" title="Je réserve mon séjour" target="_blank">
         Je réserve mon séjour
       </a>
+</div>
+      <div class="Search-container">
+        <label for="toggle-search" class="close-btn"></label>
+
+        <p class="Search-title">Taper votre recherche :</p>
+        <input type="search" class="Search-input" id="s" name="s" value="" placeholder="Quoi vous vouloir ?" width=60%>
+      </div>
+
     </nav>
     <video autoplay loop muted id="myVideo">
       <source src="../images/Hiver.mp4" type="video/mp4">
@@ -104,8 +104,6 @@
 
     </ul>
   </header>
-
-
   <!--Section-About Us-->
   <section>
     <ul class="containeraboutus">
@@ -169,118 +167,108 @@
 
   <!--Section activities/carousel-->
   <section class="carousel">
-
-    <div class="slides">
-      <article class="slide">
-        <h2>Feu de camp</h2>
-        <img src="../images/main/Deux acolytes liés p.png" alt="deux guerriers dos-à-dos">
-        <div class="liés">
-          <p>Quand tout devient chaud, rien de mieux qu'un accolyte pour couvrir vos arrières.</p>
-          <button>En savoir plus</button>
-        </div>
-      </article>
-      <article class="slide">
-        <h2>Programme remise en forme</h2>
-        <img src="../images/main/Deux acolytes dans la mouise.png" alt="">
-        <div class="timetorun">
-          <p>Rien ne sert de courir, alors skiez!</p>
-          <button>En savoir plus</button>
-        </div>
-      </article>
-      <article class="slide">
-        <h2>Retaurants partenaires</h2>
-        <img src="../images/main/Deux acolytes cassent la croute.png" alt="">
-        <div class="repas">
-
-          <p>Bon appétit bien sûr!</p>
-          <button>En savoir plus</button>
-        </div>
-      </article>
+  <div class="slides">
+    <div class="slide">
+      <h2>Luge</h2>
+      <img src="../images/main/luge.png" alt="Famille fait de la luge">
     </div>
-  </section>
-  <!--Section Quick links 2-->
+    <div class="slide">
+      <h2>Atelier création d'igloo</h2>
+      <img src="../images/main/construction-igloo.png" alt="Famille qui construit un igloo">
+    </div>
+    <div class="slide">
+      <h2>Peinture sur neige</h2>
+      <img src="../images/main/peinture-sur-glace.png" alt="Enfants qui peignent dans la neige">
+    </div>
+  </div>
+</section>
+
+<!--Section Quick links-->
   <section>
-    <ul class="containerquicklinks">
+    <h2 class="acces-rapide">Accès <br> rapide</h2>
+<ul class="containerquicklinks">
       <li>
-        <i class=""></i>
-        <p></p>
+        <i class="bi bi-book-half"></i>
+        <p>Guides et brochures</p>
       </li>
       <li>
-        <i class=""></i>
-        <p></p>
+        <i class="bi bi-apple"></i>
+        <p>Restaurants / Bars</p>
       </li>
       <li>
-        <i class=""></i>
-        <p></p>
+        <i class="bi bi-bus-front"></i>
+        <p>Les bus</p>
       </li>
       <li>
-        <i class=""></i>
-        <p></p>
-      </li>
-      <li>
-        <i class=""></i>
-        <p></p>
+         <i class="bi bi-shop-window"></i>
+         <p>Les commerces</p>
       </li>
     </ul>
   </section>
-  <li>
-    <i class=""></i>
-    <p></p>
-  </li>
-  <li>
-    <i class=""></i>
-    <p></p>
-  </li>
-  <li>
-    <i class=""></i>
-    <p></p>
-  </li>
-  <li>
-    <i class=""></i>
-    <p></p>
-  </li>
-  <li>
-    <i class=""></i>
-    <p></p>
-  </li>
-  </ul>
+  <!--Section Events-->
+<section class="events-section">
+  <div class="events-left">
+    <h2>Events</h2>
+    <ul class="events-list">
+      <li><a href="/marche-noel">22/12 Marché de Noël</a></li>
+      <li><a href="/nouvel-an">31/12 Nouvel An</a></li>
+      <li><a href="/Randonnée">08/08 Randonnée</a></li>
+    </ul>
+    <a href="/agenda-complet" class="events-link">+ VOIR TOUT L'AGENDA</a>
+  </div>
 
-  </li>
-  </ul>
+  <div class="events-card">
+    <div class="card-image">
+      <img src="../images/main/marché-de-noel.png" alt="Féerie de Noël">
+      <div class="card-caption">20/12 Féerie de Noël</div>
+    </div>
+  </div>
+</section>
+
   </main>
   <footer>
-    <div>
-      <ul class="footerList">
-        <li>
-          <p>Nous contacter</p>
-        </li>
-        <li>
-          <p>Nos guides infos</p>
-        </li>
-        <li>
-          <p>Label & certifications</p>
-        </li>
-        <li>
-          <p>FAQ<< /p>/li>
-        <li>
-          <p>Plan station</p>
-        </li>
-        <li>
-          <p>Nous recrutons</p>
-        </li>
-        <li>
-          <p>Espaces pro</p>Espaces pro
-        </li>
-        <li>
-          <p>Liens utiles</p>
-        </li>
-        <li>
-          <p>Mention légales</p>
-        </li>
-        <li>
-          <p>Nos athlètes</p>
-        </li>
-      </ul>
+
+    <picture class="Footer-background">
+      <img class="Footer-background--img"
+        src="https://www.saintfrancoislongchamp.com/content/themes/altimax/dist/img/background_footer.jpg"
+        alt="Footer background">
+    </picture>
+    <section class="under">
+      <div>
+        <ul class="footerList">
+          <li>
+            <p>Nous contacter</p>
+          </li>
+          <li>
+            <p>Nos guides infos</p>
+          </li>
+          <li>
+            <p>Label & certifications</p>
+          </li>
+          <li>
+            <p>FAQ</p>
+          </li>
+          <li>
+            <p>Plan station</p>
+          </li>
+          <li>
+            <p>Nous recrutons</p>
+          </li>
+          <li>
+            <p>Espaces pro</p>
+          </li>
+          <li>
+            <p>Liens utiles</p>
+          </li>
+          <li>
+            <p>Mention légales</p>
+          </li>
+          <li>
+            <p>Nos athlètes</p>
+          </li>
+        </ul>
+      </div>
+
       <div>
         <ul class="footerInfos">
           <li>
@@ -313,11 +301,44 @@
           <li>
             <p>Samedi et dimanche 24h/24</p>
           </li>
+          <br>
+          <button> Comment venir ?</button>
 
         </ul>
       </div>
+      <ul class="footerCol">
+        <li>
+          <h4>Suivez-nous</h4>
+        </li>
+        <ul class="Footer-listIcon">
+          <li class="Footer-listingIcon">
+            <a class="Footer-link" href="https://www.facebook.com/Saintfrancoislongchamp/" target="_blank"
+              title="Facebook"><img class="icones" src="../images/main/2023_Facebook_icon.svg.webp" alt="">
+            </a>
+          </li>
+          </li>
+          <li class="Footer-listingIcon">
+            <a class="Footer-link" href="https://www.instagram.com/mysfl/" target="_blank" title="Instagram">
+              <img class="icones" src="../images/main/Instagram_logo_2022.svg.png" alt="">
+            </a>
 
-    </div>
+          </li>
+          <li class="Footer-listingIcon">
+            <a class="Footer-link" href="https://twitter.com/my_sfl?lang=fr" target="_blank" title="Twitter">
+              <img class="icones" src="../images/main/Logo_of_Twitter.svg.png" alt="">
+            </a>
+          </li>
+        </ul>
+
+        <li>
+          <h4>Gardons le lien</h4>
+        </li>
+        <button>Rejoins notre Newletter !</button>
+        <button>Questionnaire de satisfaction </button>
+      </ul>
+
+
+    </section>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/dc2c4249c9.js" crossorigin="anonymous"></script>
