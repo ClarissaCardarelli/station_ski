@@ -1,5 +1,6 @@
 body {
-  font-family: 'Nunito', sans-serif;
+    color: var(--primary-text-color);
+    font-family: 'Nunito', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -15,18 +16,20 @@ header .logo {
 header .navbar {
     display: flex;
     list-style: none;
-        min-height: 50px;
+    min-height: 50px;
     align-items: center;
     padding-right: 5%;
-        justify-content: space-between;
-    
+    justify-content: space-between;
+
 }
-header .menu{
-        display: flex;
-        list-style: none;
-        align-items: center;
-        
-    }
+
+header .menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+
 header .navbar .navbara {
     flex-direction: column;
     color: #1e1e2f;
@@ -34,8 +37,8 @@ header .navbar .navbara {
     font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 0.5px;
-  transition: color 0.3s ease, transform 0.2s ease;
-  
+    transition: color 0.3s ease, transform 0.2s ease;
+
 }
 
 header .navbar .navbara:hover {
@@ -52,7 +55,7 @@ header .navbar .navbara:hover {
     position: relative;
     padding: 7px 10px;
     color: rgb(209, 0, 0);
-    cursor: pointer;  
+    cursor: pointer;
 }
 
 .menu li:hover .dropdown {
@@ -62,16 +65,17 @@ header .navbar .navbara:hover {
 
 .menu li .dropdown {
     white-space: nowrap;
-  display: none;
-  position: absolute; 
-  top: 100%; 
-  left: 0;
-  list-style: none;
-  flex-direction: column;
-  background-color: #ffffff;
-    z-index: 1;       
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    z-index: 1;
 
 }
+
 .menu li .dropdown li {
     display: inline-block;
     color: #1e1e2f;
@@ -81,14 +85,15 @@ header .navbar .navbara:hover {
     background-color: rgb(255, 255, 255);
     gap: 5px;
 }
+
 .menu li .dropdown :first-child {
     margin-top: 15px;
 }
 
 .menu li .dropdown li:hover {
     color: #ffffff;
-   background-color:  #1e1e2f;
-;
+    background-color: #1e1e2f;
+    ;
 
 
 }
@@ -185,24 +190,27 @@ header .navbar .navbara:hover {
 .container img {
     width: 10px;
 }
+
 header #myVideo {
     width: 98%;
     margin-right: 1%;
     margin-left: 1%;
     border-radius: 10px;
-clip-path: inset(3.5% 0 3.5% 0);
-  position: relative;  
+    clip-path: inset(3.5% 0 3.5% 0);
+    position: relative;
     overflow: hidden;
 
-margin-top: -35px;}
+    margin-top: -35px;
+}
 
 header .audio-button {
-    z-index: 1;    
-    position: absolute ;
-    top : 90px ;
+    z-index: 1;
+    position: absolute;
+    top: 90px;
     left: 95%;
 
 }
+
 header #audio-control {
     z-index: 10;
     background-color: #ff4500;
@@ -210,8 +218,9 @@ header #audio-control {
     border-radius: 10px;
     padding: 10px;
     font-weight: bold;
-    
+
 }
+
 h1,
 h2 {
     color: var(--primary-text-color);
@@ -223,38 +232,64 @@ h2 {
     font-family: var(--font-family-text);
 }
 
+
+/* === SECTION DEALS ===*/
+
+
 .card-deals {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px 250px;
-    grid-auto-rows: auto;
-    gap: 20px;
-
-
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 15px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
 }
 
-.card-deals article {
+.card-deals a {
+    display: block;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
+    height: 100%;
+    transition: transform 0.3s ease;
 }
 
-.card-deals article img {
+.card-deals a:hover {
+    transform: scale(1.02);
+}
+
+.card-deals a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-
-.card-deals article h3 {
+.card-deals a::before {
+    content: "";
     position: absolute;
-    bottom: 0;
-    color: var(--color-title-img);
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(13, 52, 84, 0.85) 100%);
+    z-index: 1;
+}
+
+
+.card-deals a h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    z-index: 2;
+    text-transform: capitalize;
+    margin: 0;
 }
 
 .card-main {
     grid-column: 1;
-    grid-row: 1/3;
+    grid-row: 1 / span 2;
 }
 
 .card-child1 {
@@ -277,30 +312,184 @@ h2 {
     grid-row: 2;
 }
 
-.card-main::before,
-.card-child1::before,
-.card-child2::before,
-.card-child3::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    bottom: 0;
-    background: linear-gradient(180deg,
-            hsla(0, 0%, 100%, 0) 0%,
-            /* haut transparent */
-            #0d3454 95%
-            /* bleu foncé vers le bas */
-        );
-    z-index: 0;
+
+/* === TABLETTE (max 900px) ====== */
+
+@media (max-width: 900px) {
+    .card-deals {
+        grid-template-columns: 1fr 1fr;
+        /* 2 colonnes */
+        grid-template-rows: auto;
+    }
+
+    .card-main {
+        grid-column: 1 / span 2;
+        /* occupe toute la largeur */
+        grid-row: 1;
+        height: 300px;
+    }
+
+    .card-child1 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .card-child2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .card-child3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .card-child4 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+}
+
+/* =============================== */
+/* === MOBILE (max 600px) ======== */
+/* =============================== */
+
+@media (max-width: 600px) {
+    .card-deals {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+
+    }
+
+    .card-deals a {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-main,
+    .card-child1,
+    .card-child2,
+    .card-child3,
+    .card-child4 {
+        grid-column: auto;
+        grid-row: auto;
+    }
 }
 
 footer {
     display: flex;
- justify-content: space-between;
+    justify-content: space-between;
 
 }
+
 footer div {
     display: flex;
     justify-content: space-between;
+}
+
+/* Grande-odysée.html */
+
+.odyssée-header {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--secondary-background-color);
+}
+
+.odyssée-header h1 {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.link-header a {
+    color: var(--primary-accent-color);
+    text-decoration: none;
+}
+
+.image-header img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.first-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.first-section h2 {
+    padding: 5%;
+}
+
+.first-section img {
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+.first-section p {
+    padding: 3%;
+    margin: 0px 100px;
+
+    line-height: 1.6;
+}
+
+.first-p {
+    font-weight: bold;
+}
+
+.first-div {
+    text-align: center;
+    padding: 2rem;
+}
+
+.first-div img {
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+.first-div h3 {
+    padding: 3%;
+    font-weight: bold;
+}
+
+/* Conteneur du bouton */
+.button-évenement {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+/* Style du bouton lui-même */
+.bouton {
+    display: inline-block;
+    background-color: var(--primary-accent-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Garder le texte blanc même après clic ou visite */
+.bouton:visited,
+.bouton:active {
+    color: white;
+    text-decoration: none;
+}
+
+/* Effet survol */
+.bouton:hover {
+    background-color: #d46a00;
+    /* ou var(--primary-accent-color-hover) */
 }

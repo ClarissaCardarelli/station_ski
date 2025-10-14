@@ -4,37 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
+    <title>La grande odyssée</title>
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/variables.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <p>
-            <a href="../html/mainpage.html">Accueil</a> /
-            <a href="../html/a-voir-a-faire.html">À voir, À faire</a> /
-            <a href="../html/événements.html">Evénements</a> /
-            La grande odyssée
-        </p>
-        <h1>La grande odyssée</h1>
+        <nav class="navbar">
+            <ul class="menu">
+
+                <li> <a class="navbara" href=""><img src="../images/main/logo.png" class="logo" alt="Logo"></a>
+                </li>
+                <li> <a class="navbara" href="">Découvrir la station</a>
+                    <ul class="dropdown">
+                        <li>La montagne caca</li>
+                        <li>La montagne pipi</li>
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">Se loger</a>
+                    <ul class="dropdown">
+                        <li>Réserver votre séjour</li>
+                        <li>Appartements & Manoirs</li>
+                        <li>Chateaux</li>
+                        <li>Bases secrete style James Bond</li>
+                        <li>Nos plus belles prisons</li>
+                        <li>Visiter notre Mordor !</li>
+                        <li>Location de dragons domestiques</li>
+
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">Mon séjour</a>
+                    <ul class="dropdown">
+                        <li>Garage à mioches</li>
+                        <li>Viens ! On est bieng</li>
+                        <li>Location de catapultes</li>
+                        <li>Garde du corps perso</li>
+                        <li>Nos meilleures bars</li>
+                        <li>Service de chauffeur</li>
+                        <li>Binouze en famille</li>
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">A voir, à faire</a>
+                    <ul class="dropdown">
+                        <li>Figurant dans un spectacle de lancer de couteaux !</li>
+                        <li>Mettre sa tête dans la bouche d'un lion</li>
+                        <li>Jeux de la fourchette</li>
+                        <li>Le jeux des 5 doigts !</li>
+                        <li>Randonnées</li>
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">Ski | Glisse</a>
+                    <ul class="dropdown">
+                        <li>Acheter mon forfait</li>
+                        <li>Louer mon matériel</li>
+                        <li>Apprendre à tomber</li>
+                        <li>Le domaine skiable</li>
+                        <li>Espace lancer de haches</li>
+
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">Balnéo</a>
+                </li>
+            </ul>
+
+            <input type="checkbox" id="toggle-search">
+            <label for="toggle-search" class="search-btn"></label>
+
+            <div class="Search-container">
+                <label for="toggle-search" class="close-btn"></label>
+
+                <p class="Search-title"></p>
+                <form role="search" method="get" id="searchform" class="Search-form" action="mainpage.html">
+                    <label for="s" class="Search-label">
+                        <input type="search" class="Search-input" id="s" name="s" value=""
+                            placeholder="Quoi vous vouloir ?">
+            </div>
+            </button>
+            </form>
+            <a class="Header-booking" href="" title="Je réserve mon séjour" target="_blank">
+                Je réserve mon séjour
+            </a>
+        </nav>
+        <div class="odyssée-header">
+            <div class="link-header">
+                <a href="../html/mainpage.html">Accueil</a> <span>/</span>
+                <a href="../html/a-voir-a-faire.html">À voir, À faire</a> <span>/</span>
+                <a href="../html/événements.html">Evénements </a><span>/</span><span> La grande odyssée</span>
+            </div>
+            <h1>La grande odyssée</h1>
+        </div>
+
     </header>
-    <div>
+
+
+    <div class="image-header">
         <img src="../images/grande-odyssée/header-img-grande-odyssée.jpg" alt="header-dog">
 
     </div>
     <main>
-        <section>
+        <section class="first-section">
             <h2>La Grande odyssée 2026 </h2>
             <h3>Rendez-vous le 19 Janvier 2026 ! </h3>
             <img src="../images/main/Deals/Grande-odyssee.png" alt="Grande-odyssee">
-            <p><strong>La 22e édition de La Grande Odyssée Royal Canin, l’évènement annuel du chien de traîneau en
-                    Europe,
-                    se
-                    tiendra du 10 au 22 janvier prochain en Région Auvergne-Rhône-Alpes. Elle ouvre une nouvelle
-                    trajectoire
-                    pour la course.</strong></p>
+            <p class="first-p">La 22e édition de La Grande Odyssée Royal Canin, l’évènement annuel du chien de traîneau
+                en
+                Europe,
+                se
+                tiendra du 10 au 22 janvier prochain en Région Auvergne-Rhône-Alpes. Elle ouvre une nouvelle
+                trajectoire
+                pour la course.</p>
             <p>
 
 
@@ -56,19 +136,19 @@
                 le tout, en parcourant 3 départements!
             </p>
         </section>
-        <div>
+        <div class="first-div">
             <img src="../images/grande-odyssée/chiens-grande-odyssée.webp" alt="dog-kiss">
+            <h3>
+                <strong>Etape 8 : Summit 404 – Doucy-Valmorel</strong>
+            </h3>
             <p>
-                <strong>Etape 8 : Saint François Longchamp – Doucy-Valmorel</strong>
-            </p>
-            <p>
-                Pour cette édition 2026, une étape inédite voit le jour, reliant Saint François Longchamp et Doucy
+                Pour cette édition 2026, une étape inédite voit le jour, reliant Summit 404 et Doucy
                 Valmorel.
                 Le Col de la Madeleine sera bien entendu de la partie, avec sa traversée lors de cette étape.
             </p>
 
         </div>
-        <div>
+        <div class="button-évenement">
             <a href="https://www.grandeodyssee.com" class="bouton">Découvrir l’événement</a>
         </div>
     </main>
