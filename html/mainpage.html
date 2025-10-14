@@ -75,19 +75,18 @@
       <input type="checkbox" id="toggle-search">
       <label for="toggle-search" class="search-btn"></label>
 
-      <div class="Search-container">
-        <label for="toggle-search" class="close-btn"></label>
-
-        <p class="Search-title"></p>
-        <form role="search" method="get" id="searchform" class="Search-form" action="mainpage.html">
-          <label for="s" class="Search-label">
-            <input type="search" class="Search-input" id="s" name="s" value="" placeholder="Quoi vous vouloir ?">
-      </div>
-      </button>
-      </form>
+<div id="righnav">
       <a class="Header-booking" href="" title="Je réserve mon séjour" target="_blank">
         Je réserve mon séjour
       </a>
+</div>
+      <div class="Search-container">
+        <label for="toggle-search" class="close-btn"></label>
+
+        <p class="Search-title">Taper votre recherche :</p>
+        <input type="search" class="Search-input" id="s" name="s" value="" placeholder="Quoi vous vouloir ?" width=60%>
+      </div>
+
     </nav>
     <video autoplay loop muted id="myVideo">
       <source src="../images/Hiver.mp4" type="video/mp4">
@@ -245,36 +244,118 @@
 
   </main>
   <footer>
-    <div>
-      <ul class="footerList">
-        <li><p>Nous contacter</p></li>
-        <li><p>Nos guides infos</p></li>
-        <li><p>Label & certifications</p></li>
-        <li><p>FAQ<</p>/li>
-        <li><p>Plan station</p></li>
-        <li><p>Nous recrutons</p></li>
-        <li><p>Espaces pro</p>Espaces pro</li>
-        <li><p>Liens utiles</p></li>
-        <li><p>Mention légales</p></li>
-        <li><p>Nos athlètes</p></li>
-      </ul>
-      <div>
-        <ul class="footerInfos">
-          <li><h5>Office du tourisme de Error 404</h5></li>
-          <li><p>185 avenue des gros bgs</p></li>
-          <li><p>69000 ville Les bgs du 31</p></li>
-          <li><h5>Horaire d'ouverture</h5></li>
-          <li><p>En saison</p></li>
-          <li><p>Lundi au vendredi de 01h-15h | 15h01-01h</p></li>
-          <li><p>Samedi et dimanche 24h/24</p></li>
-          <li><p>Hors saison</p></li>
-          <li><p>Lundi au vendredi 24h/24</p></li>
-          <li><p>Samedi et dimanche 24h/24</p></li>
 
+    <picture class="Footer-background">
+      <img class="Footer-background--img"
+        src="https://www.saintfrancoislongchamp.com/content/themes/altimax/dist/img/background_footer.jpg"
+        alt="Footer background">
+    </picture>
+    <section class="under">
+      <div>
+        <ul class="footerList">
+          <li>
+            <p>Nous contacter</p>
+          </li>
+          <li>
+            <p>Nos guides infos</p>
+          </li>
+          <li>
+            <p>Label & certifications</p>
+          </li>
+          <li>
+            <p>FAQ</p>
+          </li>
+          <li>
+            <p>Plan station</p>
+          </li>
+          <li>
+            <p>Nous recrutons</p>
+          </li>
+          <li>
+            <p>Espaces pro</p>
+          </li>
+          <li>
+            <p>Liens utiles</p>
+          </li>
+          <li>
+            <p>Mention légales</p>
+          </li>
+          <li>
+            <p>Nos athlètes</p>
+          </li>
         </ul>
       </div>
 
-    </div>
+      <div>
+        <ul class="footerInfos">
+          <li>
+            <h5>Office du tourisme de Error 404</h5>
+          </li>
+          <li>
+            <p>185 avenue des gros bgs</p>
+          </li>
+          <li>
+            <p>69000 ville Les bgs du 31</p>
+          </li>
+          <li>
+            <h5>Horaire d'ouverture</h5>
+          </li>
+          <li>
+            <p>En saison</p>
+          </li>
+          <li>
+            <p>Lundi au vendredi de 01h-15h | 15h01-01h</p>
+          </li>
+          <li>
+            <p>Samedi et dimanche 24h/24</p>
+          </li>
+          <li>
+            <p>Hors saison</p>
+          </li>
+          <li>
+            <p>Lundi au vendredi 24h/24</p>
+          </li>
+          <li>
+            <p>Samedi et dimanche 24h/24</p>
+          </li>
+          <br>
+          <button> Comment venir ?</button>
+
+        </ul>
+      </div>
+      <ul class="footerCol">
+        <li>
+          <h4>Suivez-nous</h4>
+        </li>
+        <ul class="Footer-listIcon">
+          <li class="Footer-listingIcon">
+            <a class="Footer-link" href="https://www.facebook.com/Saintfrancoislongchamp/" target="_blank"
+              title="Facebook"><img class="icones" src="../images/main/2023_Facebook_icon.svg.webp" alt="">
+            </a>
+          </li>
+          </li>
+          <li class="Footer-listingIcon">
+            <a class="Footer-link" href="https://www.instagram.com/mysfl/" target="_blank" title="Instagram">
+              <img class="icones" src="../images/main/Instagram_logo_2022.svg.png" alt="">
+            </a>
+
+          </li>
+          <li class="Footer-listingIcon">
+            <a class="Footer-link" href="https://twitter.com/my_sfl?lang=fr" target="_blank" title="Twitter">
+              <img class="icones" src="../images/main/Logo_of_Twitter.svg.png" alt="">
+            </a>
+          </li>
+        </ul>
+
+        <li>
+          <h4>Gardons le lien</h4>
+        </li>
+        <button>Rejoins notre Newletter !</button>
+        <button>Questionnaire de satisfaction </button>
+      </ul>
+
+
+    </section>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/dc2c4249c9.js" crossorigin="anonymous"></script>
