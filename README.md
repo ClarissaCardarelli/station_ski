@@ -40,7 +40,7 @@ Main page:
 - [x] section quick links - ?
 - [x] section activities - ?Jugurta
 - [x] section quick links - ?Jugurta
-- [ ] section events - ?
+- [x] section events - ?
 - [ ] section reviews - ?
 - [ ] sections photos - ?
 - [ ] responsiveness - ?
