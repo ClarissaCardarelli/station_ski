@@ -295,7 +295,7 @@ h2 {
 }
 
 footer {
-    color: white;
+    color: white !important;
   position: relative;
   display: flex;
   flex-direction: column;
