@@ -290,7 +290,76 @@ footer div {
 
 /* Section activities/carousel */
 
-.ski {
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  animation: slide 10s infinite;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  position: relative;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 567px;
+  object-fit: cover;
+}
+
+.slide h2 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+/* Animation keyframes */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  30% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  63% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  96% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.acces-rapide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerquicklinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 /* Section events */
