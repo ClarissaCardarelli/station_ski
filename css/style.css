@@ -387,6 +387,98 @@ footer div {
     height: 600px;
     justify-content: space-between;
 }
+footer {
+    color: white !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+  padding-top: 10rem;
+  font-family: Pluto, sans-serif;
+    font-weight: 200;
+    line-height: 2.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer div {
+    display: flex;
+    height: 600px;
+    justify-content: space-between;
+
+}
+
+.Footer-background {
+    height: calc(100% + 15rem);
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+        top: -15rem;
+
+}
+.Footer-background--img {
+    -o-object-position: top;
+    object-position: top;
+        height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+}
+
+.Footer-background::after {
+    background-color: #0d3454;
+    content: "";
+    height: calc(100% - 25rem);
+    left: 0;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 25rem;
+    width: 100%;
+}
+footer .under {
+display: grid;
+justify-items: center;
+     grid-template-columns: repeat(auto-fit, calc(33.33333% - 6.66667rem));
+     justify-content: center;
+     
+    }
+footer h5 {
+    font-size: 23px;
+    font-weight: bold;
+}
+footer .footerCol {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    gap: 30px;
+}
+footer h4 { 
+    font-size: 35px;
+    font-weight: bold;
+}
+footer .icones {
+    width: 40px;
+}
+footer .Footer-listIcon {
+    display: flex;
+    gap: 30px;
+}
+footer button {
+    background-color:#6ab2b1 ;
+    color: #0d3454;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+footer button:hover {
+    background-color: #ff4500;
+    color: white;
+    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Grande-odysée.html */
 
