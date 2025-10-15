@@ -1,9 +1,157 @@
-@media (max-width: 769px) {
-  .page {
+/* SCREENS LARGER THAN 768px => normal css page */
+
+/* SCREENS SMALLER THAN 1440x => ci-dessous */
+
+/* @media (max-width: 1440px) {
+  h1 {
+    color: red;
+  }
+
+  section#hero {
+  }
+
+  #formDiv {
+    width: 80%;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  #formBtnsDiv {
+    width: 50%;
+    margin: 20px 0;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+} */
+
+/* SCREENS SMALLER THAN 768px => ci-dessous */
+
+@media (max-width: 768px) {
+  * > h2 + p {
+    /* color: red; */
+    margin-bottom: 2rem;
+  }
+
+  #offers,
+  #housing,
+  #infos {
+    max-width: 100%;
+    margin: 0 auto;
+    border: 2px solid red;
+    text-align: center;
+  }
+
+  /* HERO */
+
+  #hero {
+    min-height: calc(45vh - 90px);
+  }
+
+  /* FORM */
+
+  #formDiv {
+    width: 100%;
+    /* margin: 0 auto; */
+    border: 5px solid green;
+    background: transparent;
+  }
+
+  form {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #formBtnsDiv {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  /* label {
+    display: none;
+  } */
+
+  input {
+    width: 100%;
+  }
+
+  /* HOUSING */
+
+  #map {
+    display: none;
+  }
+
+  #housingImgsCon {
+    width: 100%;
+  }
+
+  /* #housingPart2 {
+    display: none;
+  }
+
+  #carouselExampleIndicators {
+    display: revert;
+  } */
+
+  /* ADVICE */
+
+  #linksAdvice {
+    gap: 20px;
+  }
+
+  #linksAdvice li {
+    width: 40%;
+    padding: 0.5em;
+  }
+
+  #linksAdvice i {
+    color: var(--secondary-text-color);
+    font-size: 3rem;
+    position: static;
+  }
+
+  #linksAdvice p {
+    max-width: 15ch;
+    position: static;
+    font-weight: bold;
+  }
+
+  #infosSubSection {
+    margin: 4rem;
+  }
+
+  #infosSubSection1 + div {
+    display: none;
+  }
+
+  #extraAdvice {
+    display: flex;
+    flex-direction: column;
+  }
+  #extraAdvice li {
+    /* width: 100%; */
+    padding: 1rem 0;
+  }
+
+  #extraAdvice i {
+    font-size: 1.5rem;
+    position: static;
+  }
+
+  /* section#hero {
+    max-height: 500px;
+    background-size: cover;
+  } */
+
+  /* #grid1 {
     grid-template-columns: 100%;
     grid-template-areas:
       "b"
       "a"
       "c";
-  }
+  } */
 }
