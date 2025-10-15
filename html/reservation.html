@@ -4,42 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    /> -->
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/variables.css" />
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/reservation.css" />
+    <link rel="stylesheet" href="../css/media_res.css" />
     <script
       defer
       src="https://kit.fontawesome.com/dc2c4249c9.js"
       crossorigin="anonymous"
     ></script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+      defer
+    ></script> -->
   </head>
   <body>
     <header>
-      <div class="top-bar"></div>
+      <!-- <div class="top-bar"></div> -->
       <nav></nav>
       <section id="hero">
         <div id="formDiv">
           <div id="formBtnsDiv">
-            <button type="button" id="housingBtn">Hébergement</button>
-            <button type="button" id="forfaitsBtn">Forfaits</button>
+            <a href="#" class="topBtnOrange" id="housingBtn">Hébergement</a>
+            <a href="#" class="topBtnWhite" id="forfaitsBtn">Forfaits</a>
           </div>
-          <form action="">
-            <h1><span class="boldHeader">Réservez </span>votre séjour</h1>
-            <label for="dateArrive">Date d'arrivée</label>
-            <input id="dateArrive" type="date" />
-            <label for="dateLeave">Date de départ</label>
-            <input id="dateLeave" type="date" />
-            <label for="nbPeople"></label>
-            <input id="nbPeople" type="text" />
-            <button type="submit" id="subBtnRes">Rechercher</button>
+          <!-- <div id="housingTri" class="tri"></div> -->
+       <form action="">
+            <h1><span class="boldHeader">Réservez</span> </span>votre séjour</h1> 
+
+<div class="datesDiv">
+
+<div class="formInputsDate">
+      <label for="dateArrive">Date d'arrivée</label>
+      <input id="dateArrive" type="date"/>
+</div>
+
+<div class="formInputsDate">
+      <label for="dateLeave">Date de départ</label>
+      <input id="dateLeave" type="date" placeholder="date"/>
+</div>
+</div>
+
+<div class="formInputsDate">
+    <label for="nbPeople">Nombre de personnes</label>
+    <input id="nbPeople" type="number" /> 
+    </div>
+      <button class="button" type="submit" id="subBtnRes">
+              Rechercher
+            </button>
           </form>
-        </div>
+        </div> 
       </section>
     </header>
 
     <main>
-      <section id="offers">
+      <!-- <section id="offers">
         <p class="accentSubtitle">Planifiez votre prochain séjour</p>
         <h2>
           <span class="boldHeader">Avec des offres incontournables </span>rien
@@ -67,7 +96,7 @@
             <p>Ski</p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section id="housing">
         <p class="accentSubtitle">Réserver votre location</p>
@@ -87,11 +116,79 @@
             <div class="house6 housePhoto"><p>Village Montainmont</p></div>
           </div>
         </div>
+
+        <!-- CAROUSEL -->
+
+        <!-- <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../images/reservation/house1.jpg"
+                class="d-block w-100"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../images/reservation/house2.jpg"
+                class="d-block w-100"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../images/reservation/house2.jpg"
+                class="d-block w-100"
+                alt=""
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> -->
       </section>
       <section id="infos">
         <p class="accentSubtitle">Informations pratiques</p>
         <h2><span class="boldHeader">Profitez de </span>nos conseils</h2>
-        <p>Nos conseils et infos pratiques pour des séjours tranquilles</p>
+        <p>Nos conseils et infos pratiques pour des séjours tranquilles :</p>
         <ul id="linksAdvice">
           <li>
             <i class="fa-solid fa-desktop"></i>
@@ -111,44 +208,45 @@
           </li>
         </ul>
         <div id="infosSubSection">
-          <div>
+          <div id="infosSubSection1">
             <p class="accentSubtitle">un accès simplifié</p>
             <h2>
               <span class="boldHeader">Comment venir </span>jusqu'à 404 Summit
             </h2>
-            <p>
+            <p id="para">
               Facilement accessible, que ce soit en voiture, en car, en train ou
               encore en avion, notre station n'attend plus que vous. Découvrez
               toutes les options possibles pour rejoindre votre destination
               d'exception : 404 Summit !
             </p>
-            <a href="#">Venir chez nous</a>
-            <!-- lien ou btn -->
+            <a href="#" class="button">Venir chez nous</a>
           </div>
-          <img
-            src="../images/reservation/commentVenirHousingLarge.jpg"
-            alt=""
-          />
+          <div>
+            <img
+              src="../images/reservation/commentVenirHousingLarge.jpg"
+              alt=""
+            />
+          </div>
         </div>
-        <ul>
+        <ul id="extraAdvice">
           <li>
             <i class="fa-solid fa-lock"></i>
-            <p>Paiement sécurisé</p>
+            <p class="topBullet">Paiement sécurisé</p>
             <p>Mastercard, Visa, American Express</p>
           </li>
           <li>
             <i class="fa-solid fa-suitcase-medical"></i>
-            <p>Assurance annulation</p>
+            <p class="topBullet">Assurance annulation</p>
             <p>Bénéficiez de garantie en cas d'annulation</p>
           </li>
           <li>
             <i class="fa-solid fa-bell-concierge"></i>
-            <p>Service de conciergerie</p>
+            <p class="topBullet">Service de conciergerie</p>
             <p>Nos services pour votre séjour serein</p>
           </li>
           <li>
             <i class="fa-solid fa-comments"></i>
-            <p>F.A.Q.</p>
+            <p class="topBullet">F.A.Q.</p>
             <p>Toutes les réponses à vos questions</p>
           </li>
         </ul>
