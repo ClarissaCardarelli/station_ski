@@ -1,32 +1,10 @@
 /* SCREENS LARGER THAN 768px => normal css page */
 
-/* SCREENS SMALLER THAN 1440x => ci-dessous */
-
-/* @media (max-width: 1440px) {
-  h1 {
-    color: red;
-  }
-
-  section#hero {
-  }
-
+@media (max-width: 1440px) {
   #formDiv {
     width: 80%;
   }
-
-  form {
-    width: 50%;
-  }
-
-  #formBtnsDiv {
-    width: 50%;
-    margin: 20px 0;
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-} */
+}
 
 /* SCREENS SMALLER THAN 768px => ci-dessous */
 
@@ -41,14 +19,13 @@
   #infos {
     max-width: 100%;
     margin: 0 auto;
-    border: 2px solid red;
     text-align: center;
   }
 
   /* HERO */
 
   #hero {
-    min-height: calc(45vh - 90px);
+    min-height: calc(55vh - 90px);
   }
 
   /* FORM */
@@ -116,6 +93,7 @@
     color: var(--secondary-text-color);
     font-size: 3rem;
     position: static;
+    padding: 0 2em 0.5em;
   }
 
   #linksAdvice p {
@@ -137,13 +115,12 @@
     flex-direction: column;
   }
   #extraAdvice li {
-    /* width: 100%; */
-    padding: 1rem 0;
+    padding: 1em;
   }
 
   #extraAdvice i {
-    font-size: 1.5rem;
     position: static;
+    padding: 0.5em;
   }
 
   #grid1 {
