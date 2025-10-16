@@ -1,12 +1,6 @@
 * {
   box-sizing: border-box;
-  /* outline: 1px solid red; */
 }
-
-/* body {
-  width: 100vw;
-  overflow: hidden;
-} */
 
 header {
   display: flex;
@@ -14,12 +8,6 @@ header {
   align-items: center;
   justify-content: flex-start;
 }
-
-/* .top-bar {
-  background-color: #f7f7f7;
-  width: 100%;
-  height: 30px;
-} */
 
 nav {
   background-color: var(--primary-background-color);
@@ -37,16 +25,12 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
-
-  /* clip-path: ellipse(99% 100% at 50% 0%); */
 }
 
 #formDiv {
   width: 60%;
-  /* margin: 0 auto; */
   /* border: 5px solid green; */
   background: transparent;
 }
@@ -115,33 +99,14 @@ input {
   color: var(--primary-background-color);
 }
 
-/* .tri {
-  position: absolute;
-  left: 0;
-  width: 140px;
-  height: 30px;
-  clip-path: polygon(0 1%, 100% 0%, 100% 60%, 50% 100%, 0 60%);
-  background: var(--primary-accent-color);
-} */
-
 #housingBtn,
 #forfaitsBtn {
   font-family: var(--font-family-text);
   text-decoration: none;
-  /* display: inline-block; */
   text-align: center;
   padding: 0.875em;
   width: 140px;
 }
-
-/* #housingBtn {
-  position: relative;
-}
-
-#housingTri {
-  position: relative;
-  top: 10px;
-} */
 
 #offers,
 #housing,
@@ -254,11 +219,6 @@ input {
 }
 
 /* HOUSING */
-
-* > h2 + p {
-  /* color: red; */
-  margin-bottom: 4rem;
-}
 
 #housingPart2 {
   display: flex;
