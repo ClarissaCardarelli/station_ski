@@ -696,6 +696,28 @@ footer button:hover {
   font-size: 1rem;
 }
 
+#openImg {
+  display: inline-block;
+  margin: 1.5rem auto;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-accent-color);
+  /* ton orange principal */
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+  cursor: pointer;
+}
+
+/* Effet survol */
+#openImg:hover {
+  background-color: #d46a00;
+  /* orange foncé au hover */
+  text-decoration: none;
+  transform: scale(1.03);
+}
+
 
 /* === MASQUER / AFFICHER === */
 .hidden {
@@ -801,4 +823,215 @@ footer button:hover {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+.end-avoir {
+  font-size: large;
+  font-weight: bold;
+  margin: 3%;
+}
+
+/* =============================== */
+/* === RESPONSIVE a voir , a faire (max 764px) === */
+/* =============================== */
+
+@media (max-width: 764px) {
+
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    /* évite les scroll horizontaux */
+  }
+
+  /* 🔹 Structure générale */
+  main,
+  .section-avoir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* 🔹 Titres et textes */
+  .section-avoir h2,
+  .section-avoir h3,
+  .section-avoir p {
+    max-width: 90%;
+    font-size: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  /* 🔹 Images */
+  .image-balneo-avoir {
+    flex-direction: column;
+    /* passe image + texte en colonne */
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .image-balneo-avoir img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .image-balneo-avoir p {
+    text-align: center;
+    width: 90%;
+  }
+
+  /* 🔹 Image d’en-tête */
+  .image-header-avoir img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 250px;
+  }
+
+  /* 🔹 Lien ou bouton de rando */
+  #openImg {
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-accent-color);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  /* 🔹 Dernière phrase */
+  .end-avoir {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 2rem auto;
+  }
+}
+
+
+
+/* ===== Animation ===== */
+
+.first-section-animation {
+  text-align: center;
+  margin: 5%;
+}
+
+.first-section-animation h2 {
+  font-size: xx-large;
+}
+
+.first-section-animation h3 {
+  font-size: 1.5rem;
+  margin: 2%;
+}
+
+.first-section-animation h4 {
+  margin: 2%;
+}
+
+.first-section-animation ul li {
+  margin: 2%;
+}
+
+.activites h2 {
+  width: 80%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 10%;
+}
+
+.cards-activites a h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  z-index: 2;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.cards-activites a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(13, 52, 84, 0.85) 100%);
+  z-index: 1;
+}
+
+.cards-activites {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  gap: 15px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.cards-activites a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.cards-activites a:hover {
+  transform: scale(1.02);
+}
+
+.cards-activites a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cards-activites a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(13, 52, 84, 0.85) 100%);
+  z-index: 1;
+}
+
+
+.cards-activitesa h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  z-index: 2;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.cards-activites a:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: center;
+  width: 50%;
+}
+
+.texte-animations p {
+  margin: 2%;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+
+.texte-end-animations {
+
+  font-weight: bold;
+
 }

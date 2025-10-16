@@ -4,135 +4,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
+    <title>Animations</title>
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/variables.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <p>
-            <a href="../html/mainpage.html">Accueil</a> /
-            <a href="../html/a-voir-a-faire.html">À voir, À faire</a> /
-            Animations
-        </p>
+        <nav class="navbar">
+            <ul class="menu">
 
-        <h1>Animations</h1>
+                <li> <a class="navbara" href=""><img src="../images/main/logo.png" class="logo" alt="Logo"></a>
+                </li>
+                <li> <a class="navbara" href="">Découvrir la station</a>
+                    <ul class="dropdown">
+                        <li>La montagne caca</li>
+                        <li>La montagne pipi</li>
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">Se loger</a>
+                    <ul class="dropdown">
+                        <li>Réserver votre séjour</li>
+                        <li>Appartements & Manoirs</li>
+                        <li>Chateaux</li>
+                        <li>Bases secrete style James Bond</li>
+                        <li>Nos plus belles prisons</li>
+                        <li>Visiter notre Mordor !</li>
+                        <li>Location de dragons domestiques</li>
+
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">Mon séjour</a>
+                    <ul class="dropdown">
+                        <li>Garage à mioches</li>
+                        <li>Viens ! On est bieng</li>
+                        <li>Location de catapultes</li>
+                        <li>Garde du corps perso</li>
+                        <li>Nos meilleures bars</li>
+                        <li>Service de chauffeur</li>
+                        <li>Binouze en famille</li>
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">A voir, à faire</a>
+                    <ul class="dropdown">
+                        <li>Figurant dans un spectacle de lancer de couteaux !</li>
+                        <li>Mettre sa tête dans la bouche d'un lion</li>
+                        <li>Jeux de la fourchette</li>
+                        <li>Le jeux des 5 doigts !</li>
+                        <li>Randonnées</li>
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">Ski | Glisse</a>
+                    <ul class="dropdown">
+                        <li>Acheter mon forfait</li>
+                        <li>Louer mon matériel</li>
+                        <li>Apprendre à tomber</li>
+                        <li>Le domaine skiable</li>
+                        <li>Espace lancer de haches</li>
+
+                    </ul>
+                </li>
+                <li> <a class="navbara" href="">Balnéo</a>
+                </li>
+            </ul>
+
+            <input type="checkbox" id="toggle-search">
+            <label for="toggle-search" class="search-btn"></label>
+
+            <div class="Search-container">
+                <label for="toggle-search" class="close-btn"></label>
+
+                <p class="Search-title"></p>
+                <form role="search" method="get" id="searchform" class="Search-form" action="mainpage.html">
+                    <label for="s" class="Search-label">
+                        <input type="search" class="Search-input" id="s" name="s" value=""
+                            placeholder="Quoi vous vouloir ?">
+            </div>
+            </button>
+            </form>
+            <a class="Header-booking" href="" title="Je réserve mon séjour" target="_blank">
+                Je réserve mon séjour
+            </a>
+        </nav>
+        <div class="Avoir-header">
+            <div class="link-a-voir">
+                <a href="../html/mainpage.html">Accueil</a> <span>/</span>
+                <a href="../html/a-voir-a-faire.html">A voir ,A faire</a> <span>/</span>
+                <span>Animations</span>
+            </div>
+
+            <h1>Animations</h1>
+        </div>
     </header>
+
     <main>
-        <section>
+        <section class="first-section-animation">
             <h2>Par ici le programme !</h2>
-            <p>Des Animations pour toute la famille !
+            <h3>Des Animations pour toute la famille !</h3>
 
-                <strong>Retrouvez chaque semaine, nos incontournables animations</strong>
+            <h4><strong>Retrouvez chaque semaine, nos incontournables animations</strong></h4>
 
-                Le Pot d’accueil tous les dimanches à 18h pour découvrir toutes les activités, rencontrer l’équipe
-                d’animation et les autres vacanciers.
-                La traditionnelle descente aux flambeaux : chaque mercredi jusqu’au 12 mars 2025
-                Les Rencontres avec Goupy la mascotte pour des moments de rire et de partage inoubliables !
-                et les animations spéciales neiges en après ski avec Bowling humain, Sculpture sur neige, Laser game,
-                Jeu de curling ou encore Bubble foot.
-                Et bien plus encore …
+            <ul>
+                <li> Le Pot d’accueil tous les dimanches à 18h pour découvrir toutes les activités, rencontrer l’équipe
+                    d’animation et les autres vacanciers. </li>
+                <li>La traditionnelle descente aux flambeaux : chaque mercredi jusqu’au 12 mars 2025</li>
+                <li>Les Rencontres avec Goupy la mascotte pour des moments de rire et de partage inoubliables !
+                    et les animations spéciales neiges en après ski avec Bowling humain, Sculpture sur neige, Laser
+                    game,
+                    Jeu de curling ou encore Bubble foot.</li>
+            </ul>
+
+
+            <p>Et bien plus encore …<br>
 
                 Retrouvez le programme complet des animations via le lien ci-dessous, auprès de l’office de tourisme ou
                 chez nos commerçants et hébergeurs partenaires.
 
-                De quoi créer des souvenirs enneigés inoubliables !
+                <br>De quoi créer des souvenirs enneigés inoubliables !
             </p>
+
         </section>
         <section>
-            <h2>Je m’inscris aux animations</h2>
-            <p>Pour garantir le bon déroulement des animations et vous accueillir dans les meilleures conditions,
-                certaines activités requièrent une inscription préalable.</p>
-            <ul>
-                <li>Laser game</li>
-                <li>descente au flambeaux</li>
-                <li>Sculpture sur neige</li>
-                <li>descente en yooner</li>
-                <li>petit pro des pistes</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Les événements</h2>
-            <h3>Décembre 2025</h3>
-            <article>
-                <h4>Samedi 20 Décembre 2025</h4>
-                <ul>
-                    <li>
-                        <h5>Féerie de Noël</h5>
-                        <p></p>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h4>Dimanche 21 décembre 2025</h4>
-                <ul>
-                    <li>
-                        <h5>Féerie de Noël</h5>
-                        <p></p>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h4>lundi 22 Décembre 2025</h4>
-                <ul>
-                    <li>
-                        <h5>Féerie de Noël</h5>
-                        <p></p>
-                    </li>
 
-                    <li>
-                        <h5>Marché de noël</h5>
-                        <p></p>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h4>Mardi 23 Décembre 2025</h4>
-                <ul>
-                    <li>
-                        <h5>Féerie de Noël</h5>
-                        <p></p>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h4>Mercredi 24 Décembre 2025</h4>
-                <ul>
-                    <li>
-                        <h5>Féerie de Noël</h5>
-                        <p></p>
-                    </li>
-                </ul>
-            </article>
-        </section>
-        <section>
-            <strong>Fans de sports :</strong> randonnée en raquettes nocturne, compétition de ski cross… Il va y avoir
-            du sport !
-            <strong> Mélomane :</strong> Fête du Nouvel An, Goupy Parties… Ça va swinguer !
-            <strong>Famille :</strong> Féérie de Noël, Festival des P’tites Canailles en moufles… Les enfants aussi font
-            leur festival
-            Et d’autres dates à bloquer dans votre agenda…
+            <section class="activites">
+                <h2>Pour garantir le bon déroulement des animations et vous accueillir dans les meilleures conditions,
+                    certaines activités requièrent une inscription préalable.</h2>
 
-            Un planning chargé pour des vacances au ski actives
-            À retrouver chaque semaine, des animations au quotidien qui plairont aux enfants et à leurs parents
-            Pot d’Accuciel, Chamallow parties, dégustation de Fondue savoyarde, Bubble Foot, Curling humain, Bowling sur
-            neige, batailles de boules,… de quoi remplir chaque jour votre boîte à souvenirs, pendant vos vacances à la
-            neige en Savoie.
+                <div class="cards-activites">
+                    <a href="#" class="card-animation">
+                        <h3>Laser Game / Paintball </h3>
+                        <img src="../images/lasergame.webp" alt="Laser game / Paintball">
 
-            <strong> Un programme d’animation varié, et des activités à la carte toute l’année, plus des événements dans
-                tous les
-                styles… N’hésitez pas à consulter l’agenda pour ne rien rater, et vivre ensemble les temps forts de
-                votre
-                station de ski favorite. Pas de place à l’ennui à Saint François Longchamp !</strong>
-        </section>
-        <div>
-            <!-- image avant footer -->
-        </div>
+                    </a>
+
+                    <a href="#" class="card-animation">
+                        <h3>Descente aux flambeaux</h3>
+                        <img src="../images/descente-flambeau.jpg" alt="Descente aux flambeaux">
+
+                    </a>
+
+                    <a href="#" class="card-animation">
+                        <h3>Sculpture sur neige</h3>
+                        <img src="../images/sculpture.jpg" alt="Sculpture sur neige">
+
+                    </a>
+
+                    <a href="#" class="card-animation">
+                        <h3>Descente en yooner</h3>
+                        <img src="../images/yooner.jpg" alt="Descente en yooner">
+
+                    </a>
+
+                    <a href="#" class="card-animation">
+                        <h3>Petit pro des pistes</h3>
+                        <img src="../images/ski-enfant.jpg" alt="Petit pro des pistes">
+                    </a>
+                </div>
+
+            </section>
+
+            <section>
+                <section class="texte-animations">
+                    <p><SPAn class="texte-end-animations">Fans de sports :</SPAn> randonnée en raquettes nocturne,
+                        compétition de ski cross… Il
+                        va y avoir du sport !</p>
+
+                    <p><span class="texte-end-animations">Mélomane :</span>Fête du Nouvel An, Goupy Parties… Ça va
+                        swinguer !</p>
+
+                    <p><span class="texte-end-animations">Famille :</span>Féérie de Noël, Festival des P’tites Canailles
+                        en moufles… Les enfants
+                        aussi font leur festival.</p>
+
+                    <p>Et d’autres datesà bloquer dans votre agenda…</p>
+
+                    <p> <span class="texte-end-animations">Un planning chargé pour des vacances au ski actives.</span>
+                    </p>
+
+                    <p>
+                        À retrouver chaque semaine, des animations au quotidien qui plairont aux enfants et à leurs
+                        parents :
+                        Pot d’Accuciel, Chamallow parties, dégustation de Fondue savoyarde, Bubble Foot, Curling humain,
+                        Bowling sur neige, batailles de boules… de quoi remplir chaque jour votre boîte à souvenirs
+                        pendant
+                        vos vacances à la neige en Savoie.
+                    </p>
+
+                    <p>
+                        <span class="texte-end-animations">Un programme d’animation varié, et des activités à la carte
+                            toute l’année, plus des événements
+                            dans tous les styles…
+                            N’hésitez pas à consulter l’agenda pour ne rien rater, et vivre ensemble les temps forts de
+                            votre station de ski favorite.
+                            Pas de place à l’ennui à Summit 404 !</span>
+                    </p>
+                </section>
+
+            </section>
+            <div>
+                <!-- image avant footer -->
+            </div>
     </main>
 
     <footer>
 
+        <picture class="Footer-background">
+            <img class="Footer-background--img"
+                src="https://www.saintfrancoislongchamp.com/content/themes/altimax/dist/img/background_footer.jpg"
+                alt="Footer background">
+        </picture>
+        <section class="under">
+            <div>
+                <ul class="footerList">
+                    <li>
+                        <p>Nous contacter</p>
+                    </li>
+                    <li>
+                        <p>Nos guides infos</p>
+                    </li>
+                    <li>
+                        <p>Label & certifications</p>
+                    </li>
+                    <li>
+                        <p>FAQ</p>
+                    </li>
+                    <li>
+                        <p>Plan station</p>
+                    </li>
+                    <li>
+                        <p>Nous recrutons</p>
+                    </li>
+                    <li>
+                        <p>Espaces pro</p>
+                    </li>
+                    <li>
+                        <p>Liens utiles</p>
+                    </li>
+                    <li>
+                        <p>Mention légales</p>
+                    </li>
+                    <li>
+                        <p>Nos athlètes</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="footerInfos">
+                    <li>
+                        <h5>Office du tourisme de 404 Summit</h5>
+                    </li>
+                    <li>
+                        <p>185 avenue des gros bgs</p>
+                    </li>
+                    <li>
+                        <p>69000 ville Les bgs du 31</p>
+                    </li>
+                    <li>
+                        <h5>Horaire d'ouverture</h5>
+                    </li>
+                    <li>
+                        <p>En saison</p>
+                    </li>
+                    <li>
+                        <p>Lundi au vendredi de 01h-15h | 15h01-01h</p>
+                    </li>
+                    <li>
+                        <p>Samedi et dimanche 24h/24</p>
+                    </li>
+                    <li>
+                        <p>Hors saison</p>
+                    </li>
+                    <li>
+                        <p>Lundi au vendredi 24h/24</p>
+                    </li>
+                    <li>
+                        <p>Samedi et dimanche 24h/24</p>
+                    </li>
+                    <br>
+                    <a href="https://maps.app.goo.gl/C9B5MHxGhFvDVb9W7" target="_blank">
+                        <button> Comment venir ?</button>
+                    </a>
+                </ul>
+            </div>
+            <ul class="footerCol">
+                <li>
+                    <h4>Suivez-nous</h4>
+                </li>
+                <ul class="Footer-listIcon">
+                    <li class="Footer-listingIcon">
+                        <a class="Footer-link" href="https://www.facebook.com/Saintfrancoislongchamp/" target="_blank"
+                            title="Facebook"><img class="icones" src="../images/main/2023_Facebook_icon.svg.webp"
+                                alt="">
+                        </a>
+                    </li>
+                    </li>
+                    <li class="Footer-listingIcon">
+                        <a class="Footer-link" href="https://www.instagram.com/mysfl/" target="_blank"
+                            title="Instagram">
+                            <img class="icones" src="../images/main/Instagram_logo_2022.svg.png" alt="">
+                        </a>
+
+                    </li>
+                    <li class="Footer-listingIcon">
+                        <a class="Footer-link" href="https://twitter.com/my_sfl?lang=fr" target="_blank"
+                            title="Twitter">
+                            <img class="icones" src="../images/main/Logo_of_Twitter.svg.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+
+                <li>
+                    <h4>Gardons le lien</h4>
+                </li>
+                <a href="https://www.lacremedugaming.fr/inscription-newsletter?utm_source=Header&utm_medium=CDG"
+                    target="_blank">
+                    <button>Rejoins notre Newletter !</button>
+                </a>
+                <button>Questionnaire de satisfaction </button>
+            </ul>
+
+
+        </section>
     </footer>
 </body>
