@@ -45,6 +45,11 @@ i {
   border-radius: 9999px;
   width: 100%;
   margin: 0 auto;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: var(--primary-text-color);
+  color: var(--primary-background-color);
 }
 
 .boldHeader {
