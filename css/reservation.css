@@ -71,11 +71,19 @@ form {
   /* border: 2px solid green; */
   display: flex;
   justify-content: space-between;
-  /* gap: 30px; */
 }
 
 .formInputsDate {
   /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.formInputsPpl {
+  /* border: 2px solid purple; */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -91,7 +99,7 @@ input {
 }
 
 #subBtnRes {
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .topBtnOrange {
@@ -144,9 +152,7 @@ input {
 /* OFFERS */
 
 #grid1 {
-  /* height: 500px; */
   display: grid;
-  grid-template-areas: "a b c";
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: repeat(5, 1fr);
 }
@@ -160,6 +166,7 @@ input {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+  text-align: left;
   padding: 20px;
   padding-top: 25%; /* aspect ratio 4:3 (height = 25% of width) */
 }
