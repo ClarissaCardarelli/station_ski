@@ -1,9 +1,151 @@
-@media (max-width: 769px) {
-  .page {
-    grid-template-columns: 100%;
-    grid-template-areas:
-      "b"
-      "a"
-      "c";
+/* SCREENS LARGER THAN 768px => normal css page */
+
+@media (max-width: 1440px) {
+  #formDiv {
+    width: 80%;
+  }
+}
+
+/* SCREENS SMALLER THAN 768px => ci-dessous */
+
+@media (max-width: 768px) {
+  * > h2 + p {
+    /* color: red; */
+    margin-bottom: 2rem;
+  }
+
+  #offers,
+  #housing,
+  #infos {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* HERO */
+
+  #hero {
+    min-height: calc(55vh - 90px);
+  }
+
+  /* FORM */
+
+  #formDiv {
+    width: 100%;
+  }
+
+  form {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  #formBtnsDiv {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  .datesDiv {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formInputsDate {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin: 0 0 10px 0;
+  }
+
+  /* HOUSING */
+
+  #map {
+    display: none;
+  }
+
+  #housingImgsCon {
+    width: 100%;
+  }
+
+  /* ADVICE */
+
+  #linksAdvice {
+    gap: 20px;
+  }
+
+  #linksAdvice li {
+    width: 40%;
+    padding: 0.5em;
+  }
+
+  #linksAdvice i {
+    color: var(--secondary-text-color);
+    font-size: 3rem;
+    position: static;
+    padding: 0 1em 0.5em;
+  }
+
+  #linksAdvice p {
+    max-width: 15ch;
+    position: static;
+    font-weight: bold;
+  }
+
+  #infosSubSection {
+    margin: 4rem;
+  }
+
+  #infosSubSection1 + div {
+    display: none;
+  }
+
+  #infosSubSection1 a {
+    font-size: 1rem;
+  }
+
+  #extraAdvice {
+    display: flex;
+    flex-direction: column;
+  }
+  #extraAdvice li {
+    padding: 1em;
+  }
+
+  #extraAdvice i {
+    position: static;
+    padding: 0.5em;
+  }
+
+  #grid1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .div1 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+  }
+
+  .div2 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  .div3 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+
+  .div4 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+
+  .div5 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
   }
 }

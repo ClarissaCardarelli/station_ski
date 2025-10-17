@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erreur 404 | Summit 404</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            /* 🏔️ Image de montagne en fond */
+            background:
+                linear-gradient(rgba(13, 52, 84, 0.85), rgba(13, 52, 84, 0.85)),
+                /* overlay bleu transparent */
+                url("../images/deals-section/Massif_du_Mont-Blanc.jpg") center/cover no-repeat;
+            /* Ajuste le chemin selon ton dossier */
+        }
+
+        .error-container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 6rem;
+            color: #A7ECFF;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 15px rgba(167, 236, 255, 0.4);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        a {
+            display: inline-block;
+            background: #A7ECFF;
+            color: #0D3454;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        a:hover {
+            background: #8fd3f4;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-container">
+        <h1>404</h1>
+        <p>Oups… vous avez quitté la piste !<br>
+            La page que vous cherchez semble introuvable.
+        </p>
+        <a href="../html/mainpage.html">⛷️ Retour à la station</a>
+    </div>
+</body>
+
+</html>
