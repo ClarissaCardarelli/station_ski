@@ -3,14 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Réservations | 404 Summit</title>
 
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    /> -->
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/variables.css" />
     <link rel="stylesheet" href="../css/general.css" />
@@ -21,26 +15,22 @@
       src="https://kit.fontawesome.com/dc2c4249c9.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-      defer
-    ></script> -->
+
+    <script src="../JS/reservation.js" defer></script>
   </head>
   <body>
     <header>
-      <!-- <div class="top-bar"></div> -->
+      
       <nav></nav>
       <section id="hero">
         <div id="formDiv">
           <div id="formBtnsDiv">
-            <a href="#" class="topBtnOrange" id="housingBtn">Hébergement</a>
-            <a href="#" class="topBtnWhite" id="forfaitsBtn">Forfaits</a>
+            <a href="#" class="topBtnActive topBtn" id="housingBtn">Hébergement</a>
+            <a href="#" class="topBtn" id="forfaitsBtn">Activités</a>
           </div>
-          <!-- <div id="housingTri" class="tri"></div> -->
+          
        <form action="">
-            <h1><span class="boldHeader">Réservez</span> </span>votre séjour</h1> 
+            <h1><span class="boldHeader">Réservez</span> </span>votre <span id="btnH1">séjour</span></h1> 
 
 <div class="datesDiv">
 
@@ -55,11 +45,12 @@
 </div>
 </div>
 
-<div class="formInputsDate">
+<div class="formInputsPpl">
     <label for="nbPeople">Nombre de personnes</label>
     <input id="nbPeople" type="number" /> 
     </div>
-      <button class="button" type="submit" id="subBtnRes">
+
+      <button class="button" type="submit">
               Rechercher
             </button>
           </form>
@@ -68,7 +59,7 @@
     </header>
 
     <main>
-      <!-- <section id="offers">
+     <section id="offers">
         <p class="accentSubtitle">Planifiez votre prochain séjour</p>
         <h2>
           <span class="boldHeader">Avec des offres incontournables </span>rien
@@ -96,7 +87,7 @@
             <p>Ski</p>
           </div>
         </div>
-      </section> -->
+      </section> 
 
       <section id="housing">
         <p class="accentSubtitle">Réserver votre location</p>
@@ -116,74 +107,6 @@
             <div class="house6 housePhoto"><p>Village Montainmont</p></div>
           </div>
         </div>
-
-        <!-- CAROUSEL -->
-
-        <!-- <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="../images/reservation/house1.jpg"
-                class="d-block w-100"
-                alt=""
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../images/reservation/house2.jpg"
-                class="d-block w-100"
-                alt=""
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../images/reservation/house2.jpg"
-                class="d-block w-100"
-                alt=""
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div> -->
       </section>
       <section id="infos">
         <p class="accentSubtitle">Informations pratiques</p>
