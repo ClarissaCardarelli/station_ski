@@ -52,7 +52,7 @@ header .navbar .navbara {
 }
 
 header .navbar .navbara:hover {
-  color: #ff4500;
+  color: #f68700;
 }
 
 .menu {
@@ -69,7 +69,7 @@ header .navbar .navbara:hover {
 
 .menu li:hover .dropdown {
   display: flex;
-  color: #ff4500;
+  color: #f68700;
 }
 
 .menu li .dropdown {
@@ -178,7 +178,7 @@ header .navbar .navbara:hover {
 }
 
 .Search-input:focus {
-  border-color: #ff4500;
+  border-color: #f68700;
   box-shadow: 0 0 8px rgba(255, 69, 0, 0.4);
   background-color: #ffffff;
 }
@@ -214,7 +214,7 @@ header .audio-button {
 
 header #audio-control {
   z-index: 10;
-  background-color: #ff4500;
+  background-color: #f68700;
   color: white;
   border-radius: 10px;
   padding: 10px;
