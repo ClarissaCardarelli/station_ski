@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // === CARROUSEL ===
     const images = [
-        "../images/rando-1.jpg",
-        "../images/rando-2.jpg",
-        "../images/rando-3.jpg"
+        "../images/deals-section/avoir-afaire/rando-1.jpg",
+        "../images/deals-section/avoir-afaire/rando-2.jpg",
+        "../images/deals-section/avoir-afaire/rando-3.jpg"
     ];
 
     let currentIndex = 0;
