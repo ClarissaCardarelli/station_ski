@@ -65,6 +65,8 @@ header .navbar .navbara:hover {
   padding: 7px 10px;
   color: rgb(209, 0, 0);
   cursor: pointer;
+      background-color: white;
+
 }
 
 .menu li:hover .dropdown {
@@ -426,7 +428,7 @@ footer div {
 }
 
 .Footer-background::after {
-    background-color: #0d3454;
+    background-color: #0d3454 !important;
     content: "";
     height: calc(100% - 25rem);
     left: 0;
@@ -506,6 +508,7 @@ footer button:hover {
     max-height: 350px;
     object-fit: cover;
     display: block;
+    margin-top: 70px;
 }
 
 
