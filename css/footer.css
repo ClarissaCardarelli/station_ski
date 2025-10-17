@@ -24,6 +24,7 @@ header .vertical_nav:hover {
 header .vertical_nav ul {
     border-radius: 100px;
     align-items: center;
+    color: black !important;
 }
 header .vertical_nav li {
     gap: 20px   ;
@@ -81,6 +82,18 @@ header .Header-burger--row {
     transition: width .3s 
 ease-out;
     width: 66.66667%;}
+
+    header .vertical_nav li a {
+    color: black !important; /* force la couleur noire pour tous les liens */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header .vertical_nav li:hover a {
+    color: white !important; /* couleur blanche au hover */
+}
+
 
 
 @media screen and (max-width: 700px){ 
